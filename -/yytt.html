@@ -23,11 +23,24 @@
             oo.jj = {};
 
             oo.bb = document.querySelector('#bbttnn1');
+            oo.bb1 = document.querySelector('#bbttnn1');
+            oo.bb2 = document.querySelector('#bbttnn2');
+            oo.bb3 = document.querySelector('#bbttnn3');
+            oo.bb4 = document.querySelector('#bbttnn4');
+            oo.bb5 = document.querySelector('#bbttnn5');
+
+            oo.tt1 = document.querySelector('#ttxxtt1');
+            oo.tt2 = document.querySelector('#ttxxtt2');
+            oo.tt3 = document.querySelector('#ttxxtt3');
+
+            oo.ssll = document.querySelector('select');
+            oo.iiff = document.querySelector('iframe');
+
+
+
             oo.bb.onclick = function (ee) {
-                oo.tt1 = document.querySelector('#ttxxtt1');
                 oo.lluu = oo.tt1.value;
                 oo.lluu = 'https://www.youtube-nocookie.com/embed/videoseries?list=%%%%'.replace('%%%%', oo.lluu);
-                oo.iiff = document.querySelector('iframe');
                 oo.iiff.src = oo.lluu;
 
             };
@@ -50,10 +63,14 @@
 
 <body>
     <div class="ddiivv"></div>
+    <div>
+        <input id="bbttnn3" type="button" value="Load JSON 1">
+        <input id="bbttnn4" type="button" value="Load JSON 2">
+    </div>
     <div><select></select></div>
     <div><input id="ttxxtt2" type="text" size="10" value="0"><input id="bbttnn2" type="button" value="Page"></div>
-    <div><input id="ttxxtt1" type="text" size="50" value="PL1Z1KdfmKueYEJsD5Nt1dhqrdzxwdsOpe"><input id="bbttnn1"
-            type="button" value="Play">
+    <div><input id="ttxxtt3" type="text" size="20" value=""><input id="bbttnn5" type="button" value="Search"></div>
+    <div><input id="ttxxtt1" type="text" size="50" value=""><input id="bbttnn1" type="button" value="Play">
     </div>
     <div class="ddiivv"></div>
     <div><iframe width="560" height="315"
