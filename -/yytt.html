@@ -37,6 +37,7 @@
             oo.ssll = document.querySelector('select');
             oo.iiff = document.querySelector('iframe');
 
+
             oo.tt1.value = localStorage.getItem('yyttppll');
             if (!oo.tt1.value) {
                 oo.tt1.value = 'PL1Z1KdfmKueYEJsD5Nt1dhqrdzxwdsOpe';
@@ -50,16 +51,26 @@
                 oo.iiff.src = oo.lluu;
             };
 
-            oo.uu = './ppll3.json';
-            oo.hh = new XMLHttpRequest();
-            oo.hh.open('GET', oo.uu);
-            oo.hh.responseType = 'json';
-            oo.hh.onload = function (ee) {
-                oo.jj = ee.target.response;
+            oo.bb2.onclick = function (ee) {
 
-                console.dir(oo);
+                oo.uu = './ppll3.json';
+                oo.hh = new XMLHttpRequest();
+                oo.hh.open('GET', oo.uu);
+                oo.hh.responseType = 'json';
+                oo.hh.onload = function (ee) {
+                    oo.jj = ee.target.response;
+
+                    oo.ii = oo.tt2.value | 0;
+                    if (oo.ii < 0) { oo.ii = 0; }
+                    oo.ssll.innerHTML = '';
+                    oo.pp = oo.jj.items.slice(oo.ii, oo.ii + 22);
+
+                    console.dir(oo);
+                };
+                oo.hh.send();
+
             };
-            oo.hh.send();
+
 
         };
 
