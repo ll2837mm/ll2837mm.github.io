@@ -96,6 +96,23 @@
             };
 
 
+            oo.bb5.onclick = function (ee) {
+
+                oo.ssll.innerHTML = '';
+                oo.sstt = oo.tt3.value.toLowerCase();
+                oo.pp = oo.jj.items.filter(ll => ll.title.toLowerCase().includes(oo.sstt));
+
+                for (const ll of oo.pp.slice(0, 30)) {
+                    oo.oopp = document.createElement('option');
+                    oo.oopp.value = ll.list;
+                    oo.oopp.textContent = ll.title + ' (' + ll.length + ')';
+                    oo.ssll.append(oo.oopp);
+
+                }
+
+            };
+
+
         };
 
     </script>
