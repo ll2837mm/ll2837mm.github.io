@@ -7,17 +7,41 @@
         }
     </style>
     <script>
-        (async () => {
+        onload = function () {
 
             oo = {};
+
+
+
+
+            oo.dd=document.querySelector('#ddiivv');
+
+
+
+
+            
             oo.uu = './ppll3.json';
-            oo.rr = await fetch(oo.uu);
-            oo.jj = await oo.rr.json();
+            oo.hh = new XMLHttpRequest();
+            oo.hh.open('GET', oo.uu);
+            oo.hh.responseType = 'json';
+            oo.hh.onload = function (ee) {
 
-            console.dir(oo);
 
 
-        })()
+
+
+
+
+
+
+
+
+                console.dir(oo);
+            };
+            oo.hh.send();
+
+
+        };
 
 
 
@@ -27,11 +51,14 @@
 </head>
 
 <body>
+    <div id="ddiivv"></div>
+
+
+
+
+
     <div><iframe width="560" height="315"
             src="https://www.youtube-nocookie.com/embed/videoseries?list=PL1Z1KdfmKueYEJsD5Nt1dhqrdzxwdsOpe"
             title="YouTube video player" frameborder="0"
             allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>
-    <ul>
-        <li></li>
-    </ul>
 </body>
