@@ -11,6 +11,10 @@
 
             oo = {};
             oo.uu = './ppll3.json';
+            oo.rr = await fetch(oo.uu);
+            oo.jj = await oo.rr.json();
+
+            console.dir(oo);
 
 
         })()
