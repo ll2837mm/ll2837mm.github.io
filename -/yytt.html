@@ -40,13 +40,14 @@
 
 
             oo.bb1.onclick = function () {
-                if (!oo.tt1.value) { return; }
+                oo.lluu = oo.tt1.value;
+                if (!oo.lluu) { return; }
                 try {
                     oo.ll = JSON.parse(localStorage.getItem('yyttppll'));
                 } finally {
                     if (!(oo.ll instanceof Array)) { oo.ll = []; }
                 }
-                oo.ll.unshift(oo.tt1.value);
+                oo.ll.unshift(oo.lluu);
                 localStorage.setItem('yyttppll', JSON.stringify(oo.ll));
                 oo.lluu = 'https://www.youtube-nocookie.com/embed/videoseries?list=%%%%'.replace('%%%%', oo.lluu);
                 oo.iiff.src = oo.lluu;
