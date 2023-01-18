@@ -50,7 +50,7 @@
             }
 
 
-            oo.bb1.onclick = function (ee) {
+            oo.bb1.onclick = function () {
                 oo.lluu = oo.tt1.value;
                 localStorage.setItem('yyttppll', oo.lluu);
                 oo.lluu = 'https://www.youtube-nocookie.com/embed/videoseries?list=%%%%'.replace('%%%%', oo.lluu);
@@ -63,8 +63,8 @@
                 oo.hh = new XMLHttpRequest();
                 oo.hh.open('GET', oo.uu);
                 oo.hh.responseType = 'json';
-                oo.hh.onload = function (ee) {
-                    oo.jj = ee.target.response;
+                oo.hh.onload = function () {
+                    oo.jj = oo.hh.response;
 
                     console.dir(oo);
                 };
@@ -77,7 +77,7 @@
             };
 
 
-            oo.bb2.onclick = function (ee) {
+            oo.bb2.onclick = function () {
 
                 oo.ii = oo.tt2.value | 0;
                 if (oo.ii < 0) { oo.ii = 0; }
@@ -96,12 +96,12 @@
             };
 
 
-            oo.ssll.onchange = function (ee) {
+            oo.ssll.onchange = function () {
                 oo.tt1.value = oo.ssll.value;
             };
 
 
-            oo.bb5.onclick = function (ee) {
+            oo.bb5.onclick = function () {
 
                 oo.ssll.innerHTML = '';
                 oo.sstt = oo.tt3.value.toLowerCase();
