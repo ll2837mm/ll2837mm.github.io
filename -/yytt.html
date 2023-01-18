@@ -82,6 +82,7 @@
                 oo.ssll.innerHTML = '';
                 oo.ii = oo.tt2.value | 0;
                 if (oo.ii < 0) { oo.ii = 0; }
+                oo.tt2.value = oo.ii;
                 oo.pp = oo.jj.items.slice(oo.ii, oo.ii + 30);
 
                 for (const ll of oo.pp) {
@@ -108,6 +109,7 @@
                 oo.pp = oo.sstt ? oo.jj.items.filter(mm => mm.title.toLowerCase().includes(oo.sstt)) : [];
                 oo.ii = oo.tt2.value | 0;
                 if (oo.ii < 0) { oo.ii = 0; }
+                oo.tt2.value = oo.ii;
                 oo.pp = oo.pp.slice(oo.ii, oo.ii + 30);
 
                 for (const ll of oo.pp) {
