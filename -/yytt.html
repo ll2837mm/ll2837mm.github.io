@@ -39,15 +39,14 @@
             oo.iiff = document.querySelector('iframe');
 
 
-            oo.tt1.value = localStorage.getItem('yyttppll');
-            if (!oo.tt1.value) {
-                oo.tt1.value = 'PL1Z1KdfmKueYEJsD5Nt1dhqrdzxwdsOpe';
-            }
-
-
             oo.bb1.onclick = function () {
-                oo.lluu = oo.tt1.value;
-                localStorage.setItem('yyttppll', oo.lluu);
+                oo.ll = [];
+                try {
+                    oo.ll = JSON.parse(localStorage.getItem('yyttppll'));
+                } finally {
+                }
+                oo.ll.unshift(oo.tt1.value);
+                localStorage.setItem('yyttppll', JSON.stringify(oo.ll));
                 oo.lluu = 'https://www.youtube-nocookie.com/embed/videoseries?list=%%%%'.replace('%%%%', oo.lluu);
                 oo.iiff.src = oo.lluu;
             };
