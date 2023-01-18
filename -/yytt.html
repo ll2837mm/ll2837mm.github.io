@@ -49,7 +49,9 @@
                 } finally {
                     if (!(oo.ll instanceof Array)) { oo.ll = []; }
                 }
+                oo.ll = oo.ll.filter(mm => mm !== oo.lluu);
                 oo.ll.unshift(oo.lluu);
+                if (oo.ll.length > 30) { oo.ll.length = 30; }
                 localStorage.setItem('yyttppll', JSON.stringify(oo.ll));
                 oo.lluu = 'https://www.youtube-nocookie.com/embed/videoseries?list=%%%%'.replace('%%%%', oo.lluu);
                 oo.iiff.src = oo.lluu;
