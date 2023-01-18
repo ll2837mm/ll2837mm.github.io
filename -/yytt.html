@@ -76,7 +76,13 @@
                 oo.hh = null;
 
                 oo.ssll.innerHTML = '';
+                try {
+                    oo.ll = JSON.parse(localStorage.getItem('yyttppll'));
+                } catch (ee) {
 
+                } finally {
+                    if (!(oo.ll instanceof Array)) { oo.ll = []; }
+                }
                 for (const ll of oo.ll) {
                     oo.oopp = document.createElement('option');
                     oo.oopp.value = ll;
