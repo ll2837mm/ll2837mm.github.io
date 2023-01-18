@@ -40,11 +40,7 @@
 
 
             oo.bb1.onclick = function () {
-                oo.ll = [];
-                try {
-                    oo.ll = JSON.parse(localStorage.getItem('yyttppll'));
-                } finally {
-                }
+                if (!oo.tt1.value) { return; }
                 oo.ll.unshift(oo.tt1.value);
                 localStorage.setItem('yyttppll', JSON.stringify(oo.ll));
                 oo.lluu = 'https://www.youtube-nocookie.com/embed/videoseries?list=%%%%'.replace('%%%%', oo.lluu);
